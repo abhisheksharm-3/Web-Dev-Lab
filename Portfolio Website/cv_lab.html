@@ -1,16 +1,164 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>My CV</title>
+  <title>CV Website</title>
+  <link rel="icon" href="icon1.png" type="image/x-icon">
+  <link rel="stylesheet" type="text/css" href="style.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="style.css">
 </head>
+<style>/* Reset default styles */
+  * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    /* Set font and background color */
+    body {
+      font-family: Arial, sans-serif;
+      background: radial-gradient(circle at -8.9% 51.2%, rgb(255, 124, 0) 0%, rgb(255, 124, 0) 15.9%, rgb(255, 163, 77) 15.9%, rgb(255, 163, 77) 24.4%, rgb(19, 30, 37) 24.5%, rgb(19, 30, 37) 66%);
+    }
+    
+    /* Style the header */
+    header {
+      position: relative;
+      padding: 1em;
+      text-align: center;
+      color: #ff7c00;
+    }
+    
+    /* Style the image */
+    #myimg {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      border: 3px solid #ff7c00;
+    }
+    
+    /* Style the navigation links */
+    nav {
+      margin-top: 20px;
+      text-align: center;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin-right: 1em;
+      font-size: 1.2em;
+      padding: 10px;
+      transition: all 0.3s ease-in-out;
+    }
+    nav a:hover {
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+      color: #ffa600;
+      -webkit-border-radius: 10px;
+      -moz-border-radius: 10px;
+      -ms-border-radius: 10px;
+      -o-border-radius: 10px;
+  }
+    
+    /* Style the main container */
+    .main-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 2em;
+    }
+    
+    /* Style the left container */
+    .left-container {
+      width: 60%;
+      padding: 1em;
+      color: #fff;
+    }
+    
+    /* Style the right container */
+    .right-container {
+      width: 40%;
+      padding: 1em;
+      color: #fff
+    }
+    
+    /* Style the contact button */
+    button {
+      background-color: #ffa600;
+      color: #fff;
+      border: none;
+      padding: 0.8em 1.5em;
+      font-size: 1.2em;
+      border-radius: 10px;
+      transition: all 0.3s ease-in-out;
+      outline: none;
+    }
+    button:hover {
+      transform: translateY(-2px);
+      box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+      -webkit-transform: translateY(-2px);
+      -moz-transform: translateY(-2px);
+      -ms-transform: translateY(-2px);
+      -o-transform: translateY(-2px);
+  }
+    /* Style sections */
+  section {
+      margin-bottom: 2em;
+    }
+    
+    /* Style section headings */
+    section h2 {
+      font-size: 2em;
+      margin-bottom: 0.5em;
+      color: #a14e00;
+    }
+    
+    /* Style section subheadings */
+    section h3 {
+      color: rgb(77, 81, 97);
+      font-size: 1.5em;
+      margin-bottom: 0.5em;
+    }
+    
+    /* Style section paragraphs */
+    section p {
+      color: #f5f5dc;
+  
+      font-size: 1.2em;
+      line-height: 1.5em;
+    }
+    
+    /* Make the layout responsive */
+    @media (max-width: 600px) {
+      /* Stack the navigation links vertically on small screens */
+      nav {
+        float: none;
+        text-align: center;
+      }
+      /* Center the image on small screens */
+      #myimg {
+        display: block;
+        margin: 0 auto;
+      }
+      /* Change the flex direction of main container */
+      .main-container {
+        flex-direction: column;
+      }
+      /* Make the left and right container to take full width on small screens */
+      .left-container, .right-container {
+        width: 100%;
+      }
+    }
+    </style>
 <body>
   <header>
-    <img src="dummy-user.png" alt="CV dummy" id="cvdummy">
-    <h1>My Name</h1>
+    <img src="avatar-3637425__340.webp" alt="My Image" id="myimg">
+    <h1>Abhishek Sharma</h1>
     <nav>
       <a href="#about">About Me</a>
+      <a href="#projects">Projects</a>
       <a href="#education">Education</a>
       <a href="#skills">Skills</a>
       <a href="#contact">Contact</a>
@@ -20,33 +168,53 @@
     <div class="left-container">
       <section id="about">
         <h2>About Me</h2>
-        <p>A brief description of yourself and your background.</p>
+        <p>I am a 4th semester Computer Science and Engineering student with a passion for technology and programming. Strong foundation in C, C++, and Java. Proven skills in software development, web development, and data structures. Experience in coding competitions, hackathons, and keen interest in Artificial Intelligence and Machine Learning. Always eager to learn new technologies and looking for internships and job opportunities in the field of Computer Science and Engineering.</p>
+      </section>
+      <section id="projects">
+        <h2>Projects</h2>
+        <h3>Project 1</h3>
+        <p>null</p>
+        <h3>Project 2</h3>
+        <p>null</p>
       </section>
     </div>
     <div class="right-container">
       <section id="education">
         <h2>Education</h2>
-        <h3>Degree - Institution Name</h3>
-        <p>A brief description of the degree you earned and any relevant coursework.</p>
+        <h3>Bachelor of Engineering - CCET, Chandigarh</h3>
+        <p>I am currently pursuing a Bachelor's degree in Computer Science and Engineering at [Your University], where I am honing my skills in programming, software development, and computer systems</p>
       </section>
       <section id="skills">
         <h2>Skills</h2>
         <ul>
-          <li>Skill 1</li>
-          <li>Skill 2</li>
-          <li>Skill 3</li>
+          <li>C</li>
+          <li>C++</li>
+          <li>Web Devlopment</li>
         </ul>
       </section>
       <section id="contact">
         <h2>Contact</h2>
-        <p>Your contact information and links to your social media profiles.</p>
+        <button><a href="https://www.linkedin.com/in/abhisheksharma20212025/" class="button">Contact Me</a></button>
       </section>
+      <!-- <section id="form">
+        <h2>Contact</h2>
+        <form action="submit-form.php" method="post">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+      
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+      
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" required></textarea>
+      
+          <input type="submit" value="Submit">
+        </form>
+      </section> -->
+      
     </div>
   </div>
   <footer>
-    <div class="container">
-      <p>Copyright ©2022 My Name</p>
-    </div>
   </footer>
 </body>
 </html>
