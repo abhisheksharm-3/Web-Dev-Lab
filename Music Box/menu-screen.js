@@ -40,7 +40,7 @@ class MenuScreen {
   loadGifData() {
     const textBox = document.querySelector("#query-input");
     const endpoint = "https://api.giphy.com/v1/gifs/search?q=" + textBox.value +
-      "&api_key=dc6zaTOxFJmzC&limit=25&rating=g";
+      "&api_key=OU45Ywtsgw8wZQcR6n1RyHOXerYtvUhs&limit=25&rating=g";
     fetch(endpoint)
     .then(response => response.json())
     .then(this.onGifJsonReady);
