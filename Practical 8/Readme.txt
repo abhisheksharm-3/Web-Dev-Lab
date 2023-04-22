@@ -1,1 +1,0 @@
-This Content Management system is created with PHP and MySQL databases. The system is consisting of 2 areas: Public (general area where users can view the items) and Administrator are (administrative area where only priviliged users can acces and maintain the information on subjects and pages which are stored in the backend MySQL database).
